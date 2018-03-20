@@ -70,3 +70,10 @@ $(() => {
   $('.customer-card-flags').clone().prependTo('.customer-card-details')
   $('.customer-card-drawer').clone().appendTo('.customer-card-details')
 })
+
+window.googleTranslateElementInit = function () {
+  new google.translate.TranslateElement({
+    pageLanguage: 'de',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element')
+}
